@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alef task</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <img src="images/header/logo.svg" alt="logo">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Main</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Gallery</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">News</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Profile</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__tel">
+          <a class="header__tel-number" href="tel:+544349000000">+544 3490 00000</a>
+          <span class="header__tel-text">Звони скорее!</span>
+        </div>
+
+        <!-- Mobile navigation -->
+        <div class="burger__button-wrapper">
+          <div class="burger__button"></div>
+        </div>
+        <nav class="header__mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#">Main</a></li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#">Gallery</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#">News</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#">Profile</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="tel:+544349000000">+544 3490 00000</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h2 class="header__title">Найдено 349 котов</h2>
+    </div>
+  </header>
+
+  <!-- Cats -->
+  <section class="cats">
+    <div class="container">
+      <div class="cats__sort">
+        <span class="cats__sort-text">Сортировать по:</span>
+        <div class="cats__btn-wrapper">
+          <button class="cats__btn cats__btn-cost">Цене</button>
+          <button class="cats__btn cats__btn-age">Возрасту</button>
+        </div>
+      </div>
+
+      <!-- Cats Items -->
+      <div class="cats__wrapper">
+        <div class="cats__item" data-price="30000" data-age="2">
+          <img class="cats__item-img" src="images/cats/1.jpg" alt="">
+          <div class="cats__item-discount">-40%</div>
+          <div class="cats__item-favorite">
+            <img src="images/cats/favorite.svg" alt="favorite">
+          </div>
+          <h3 class="cats__item-title">Кот полосатый</h3>
+          <div class="cats__item-info">
+            <div class="info__color">Коричневый окрас</div>
+            <div class="info__age"><span>2 мес.</span>Возраст</div>
+            <div class="info__paws"><span>4</span>Кол-во лап</div>
+          </div>
+          <strong class="cats__item-cost">30 000 руб.</strong>
+          <button class="cats__item-btn cats__item-btn--active">Купить</button>
+        </div>
+        <div class="cats__item" data-price="40000" data-age="4">
+          <img class="cats__item-img" src="images/cats/2.jpg" alt="">
+          <div class="cats__item-favorite cats__item-favorite--active">
+            <img src="images/cats/favorite.svg" alt="favorite">
+          </div>
+          <h3 class="cats__item-title">Кот полосатый</h3>
+          <div class="cats__item-info">
+            <div class="info__color">Коричневый окрас</div>
+            <div class="info__age"><span>4 мес.</span>Возраст</div>
+            <div class="info__paws"><span>4</span>Кол-во лап</div>
+          </div>
+          <strong class="cats__item-cost">40 000 руб.</strong>
+          <button class="cats__item-btn cats__item-btn--disabled">Продан</button>
+        </div>
+        <div class="cats__item" data-price="20000" data-age="6">
+          <img class="cats__item-img" src="images/cats/3.jpg" alt="">
+          <div class="cats__item-overlay"></div>
+          <div class="cats__item-favorite">
+            <img src="images/cats/favorite.svg" alt="favorite">
+          </div>
+          <h3 class="cats__item-title">Кот полосатый</h3>
+          <div class="cats__item-info">
+            <div class="info__color">Коричневый окрас</div>
+            <div class="info__age"><span>6 мес.</span>Возраст</div>
+            <div class="info__paws"><span>4</span>Кол-во лап</div>
+          </div>
+          <strong class="cats__item-cost">20 000 руб.</strong>
+          <button class="cats__item-btn cats__item-btn--active">Купить</button>
+        </div>
+        <div class="cats__item" data-price="25000" data-age="3">
+          <img class="cats__item-img" src="images/cats/1.jpg" alt="">
+          <div class="cats__item-favorite">
+            <img src="images/cats/favorite.svg" alt="favorite">
+          </div>
+          <h3 class="cats__item-title">Кот полосатый</h3>
+          <div class="cats__item-info">
+            <div class="info__color">Коричневый окрас</div>
+            <div class="info__age"><span>3 мес.</span>Возраст</div>
+            <div class="info__paws"><span>4</span>Кол-во лап</div>
+          </div>
+          <strong class="cats__item-cost">25 000 руб.</strong>
+          <button class="cats__item-btn cats__item-btn--active">Купить</button>
+        </div>
+        <div class="cats__item" data-price="30000" data-age="5">
+          <img class="cats__item-img" src="images/cats/3.jpg" alt="">
+          <div class="cats__item-overlay"></div>
+          <div class="cats__item-discount">-40%</div>
+          <div class="cats__item-favorite">
+            <img src="images/cats/favorite.svg" alt="favorite">
+          </div>
+          <h3 class="cats__item-title">Кот полосатый</h3>
+          <div class="cats__item-info">
+            <div class="info__color">Коричневый окрас</div>
+            <div class="info__age"><span>5 мес.</span>Возраст</div>
+            <div class="info__paws"><span>4</span>Кол-во лап</div>
+          </div>
+          <strong class="cats__item-cost">30 000 руб.</strong>
+          <button class="cats__item-btn cats__item-btn--active">Купить</button>
+        </div>
+        <div class="cats__item" data-price="10000" data-age="7">
+          <img class="cats__item-img" src="images/cats/2.jpg" alt="">
+          <div class="cats__item-favorite cats__item-favorite--active">
+            <img src="images/cats/favorite.svg" alt="favorite">
+          </div>
+          <h3 class="cats__item-title">Кот полосатый</h3>
+          <div class="cats__item-info">
+            <div class="info__color">Коричневый окрас</div>
+            <div class="info__age"><span>7 мес.</span>Возраст</div>
+            <div class="info__paws"><span>4</span>Кол-во лап</div>
+          </div>
+          <strong class="cats__item-cost">10 000 руб.</strong>
+          <button class="cats__item-btn cats__item-btn--disabled">Продан</button>
+        </div>
+      </div>
+      <!-- Cats Items End -->
+
+      <button class="cats__btn-more">Показать еще 20</button>
+      <div class="arrow-up__wrapper">
+        <button class="arrow-up" type="button">
+          <img class="arrow-up__image" src="images/cats/arrow-up.svg" alt="">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <h2 class="footer__title">Успей купить!</h2>
+          <p class="footer__text">Подпишись и успей словить все акции</p>
+        </div>
+        <form class="footer__form">
+          <input class="form__input" type="email" placeholder="Email">
+          <button class="footer__btn" type="submit">Подписаться</button>
+          <div class="form__checkbox">
+            <label class="checkbox__label">
+              <input class="checkbox__input visually-hidden" type="checkbox" checked>
+              <span class="checkbox__span"></span>
+              <span class="checkbox__text">Подписаться на новости</span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Pop-up -->
+  <div class="popup">
+    <p class="popup__text">Товар добавлен в избранное</p>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
